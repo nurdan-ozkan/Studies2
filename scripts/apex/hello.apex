@@ -13,3 +13,8 @@ String companyName = 'Blue Company';
 for(Integer num = 1; num < 5; num++){
     System.debug('Number is '+ num);
 }
+
+List<String> myList = new List<String> {'Red', 'Blue'};
+for(String item : myList){
+    System.debug('my favoritte color is ' +item);
+}
