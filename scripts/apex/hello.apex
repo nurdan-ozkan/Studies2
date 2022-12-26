@@ -9,3 +9,7 @@ string tempvar = 'Enter_your_name_here';
 System.debug('Hello World!');
 System.debug('My name is Nurdan' + tempvar);
 String companyName = 'Blue Company';
+
+for(Integer num = 1; num < 5; num++){
+    System.debug('Number is '+ num);
+}
