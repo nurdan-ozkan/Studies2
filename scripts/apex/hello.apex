@@ -1,24 +1,17 @@
-// Use .apex files to store anonymous Apex.
-// You can execute anonymous Apex in VS Code by selecting the
-//     apex text and running the command:
-//     SFDX: Execute Anonymous Apex with Currently Selected Text
-// You can also execute the entire file by running the command:
-//     SFDX: Execute Anonymous Apex with Editor Contents
+// Implicit Conversion
+integer num = 5;
+decimal newNumber = num;
+System.debug(newNumber);  //5
 
-/*string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is Nurdan' + tempvar);
-String companyName = 'Blue Company';
+// Explicity  Conversion
 
-for(Integer num = 1; num < 5; num++){
-    System.debug('Number is '+ num);
-}
+String num = '10';
+Integer convertedNum = integer.valueOf(num);
+System.debug(convertedNum + 1);   //11
 
-List<String> myList = new List<String> {'Red', 'Blue'};
-for(String item : myList){
-    System.debug('my favoritte color is ' +item);
-} */
+Integer count = 96;
+String str = String.valueOf(count);
+System.debug(str + 1);   //961
 
-for(Account acc : [Select Name from Account]){
-    System.debug(acc.Name);
-}
+Date dt = Date.newInstance(2023, 01 , 10);
+System.debug(dt); // DEBUG|2023-01-10 00:00:00
