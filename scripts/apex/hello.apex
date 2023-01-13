@@ -15,3 +15,7 @@ System.debug(str + 1);   //961
 
 Date dt = Date.newInstance(2023, 01 , 10);
 System.debug(dt); // DEBUG|2023-01-10 00:00:00
+
+
+// Constractor Method
+
